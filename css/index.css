@@ -1,0 +1,64 @@
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.container {  display: grid;
+    grid-template-columns: 200px auto auto 200px;
+    grid-template-rows: 150px auto auto 150px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "top top top top"
+    "left_zone main main right_zone"
+    "left_zone main main right_zone"
+    "footer footer footer footer";
+}
+@media only screen and (max-width:1050px) {
+    
+}
+
+/*TOP    TOP    TOP    TOP    TOP    TOP    TOP    TOP    TOP    TOP    TOP    TOP    TOP    TOP    TOP    TOP*/
+.top { grid-area: top; 
+    width: 100%;
+}
+.left_zone { grid-area: left_zone; 
+    height: auto;
+}
+.right_zone { grid-area: right_zone; 
+    height: auto;
+}
+/*MAIN    MAIN    MAIN    MAIN    MAIN    MAIN    MAIN    MAIN    MAIN    MAIN    MAIN    MAIN    MAIN    MAIN*/
+.main { grid-area: main; 
+    height: auto;
+}
+#mostrador {
+    border: solid 2px red;
+}
+td{
+    border: solid 1px blue;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+}
+#Camisas{
+}
+#Sudaderas{
+}
+#Accesorios{
+}
+#Especiales{
+}
+#Temporada{
+}
+#Proximamente{
+}
+/*FOOTER    FOOTER    FOOTER    FOOTER    FOOTER    FOOTER    FOOTER    FOOTER    FOOTER    FOOTER    FOOTER*/
+.footer { grid-area: footer; 
+    width: 100%;
+}
+/*VISUALIZADOR    VISUALIZADOR    VISUALIZADOR    VISUALIZADOR    VISUALIZADOR    VISUALIZADOR    VISUALIZADOR*/
+.top { border: solid 1px;}
+.main { border: solid 1px;}
+.right_zone { border: solid 1px;}
+.left_zone { border: solid 1px;}
+.footer { border: solid 1px;}
